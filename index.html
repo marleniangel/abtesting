@@ -4,131 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <title>Your HTML Template</title>
+    <title>A/B Testing Handin</title>
 </head>
 <body>
 
     <!-- Section 1 -->
     <section>
+    <h2>Overview</h2>
+    <p>
+        Does a certain version of an appointment scheduling web page with modified contrast, spacing, and colors allow different groups of users to complete tasks differently or more quickly? With the use of A/B testing, I will aim to discover whether one version of a webpage produces different user results than another using t-tests. Can a different design of a webpage determine how quickly users are able to navigate through a similar task?
+    </p>
+    </section>
+
+    <section>
         <header>
-            <h2>Part 1: Identifying Usability Problems</h2>
+            <h2>Part 1: Data Collection (In Studio)</h2>
         </header>
         <article>
             <!-- Subsection 1.1 -->
-            <h3>Picking a Webpage</h3>
+            <h3>Changes to Interface</h3>
             <section class="image-container" ></section>
                 <img
-                    src="JalaStudioOriginal.png"
-                    class="menu-image"
+                    src="FullInterface.png"
+                    class="menu-image2"
                 />
+                <img
+                    src="CloserViewInterface.png"
+                    class="menu-image2"
+                />
+                <img
+                    src="SuccessPageInterface.png"
+                    class="menu-image2"
+                />
+
+                <p>I modified the original design by changing the text & button colors, button spacing, and by adding lines between each appointment date. </p>
             </section>
-            <p><a href="https://www.jala-studio.com/" target="_blank">Jala Studio Original Website</a></p>
-            <p>I chose this website because I noticed numerous glaring accessibility issues with the homepage like responsiveness and low contrast.</p>
+
 
             <!-- Subsection 1.2 -->
-            <h3>Finding Problems</h3>
-            <p>1. Users need to understand how to toggle on dropdown menus in order to access the schedule for yoga events. This may not be intuitive especially because of the very low contrast of the dropdown menu bar. 
-               <br>
-               2. The dropdown menu bar is also not apparent to be clickable, affecting the learnability of the site. 
-               <br>
-               3. The traits of the dropdown menus are different in that not all lead to a different site while a couple do.  However, all minus the “home” have a dropdown. This affects both the memorability and efficiency of the site. 
-               <br>
-               4. To be able to purchase artwork or a gift certificate, the issue persists of not being able to distinguish whether text is clickable or not. Users have to hover over all text to figure out which words link to relevant parts of the site which affects the learnability of the site. 
+            <section>
+                <header>
+                    <h2>Part 2: Analysis</h2>
+                </header>
+
+                <h3>Metric of my choice</h3>
+                <p>
+                    My metric of choice is time to first click. I feel that this metric will help me reveal any hints toward whether users felt more confident using one site over another based on the time it took them to make their first click. 
                 </p>
-            <!-- Subsection 1.2 -->
-            <h3>Accessibility</h3>
-            <p>As expected, WebAIM detected glaring contrast issues with the site. Most of the text on the home webpage has very low contrast against the white background site. Additionally, the tool detected a missing heading and empty and redundant links.  I also noticed the redundancy of one of the clickable elements but I was not aware of the missing headings. I agree with the low contrast errors because this was one of the main issues that caused me to choose this site to redesign. 
+
+                <h3>Hypotheses & Predictions</h3>
+                <p>
+                    <h4>Misclick Rate</h4>
+
+Null hypothesis: The misclick rate is the same for both designs. 
+<br>
+Alternative hypothesis: The misclick rate for version A is higher than the misclick rate of version B. 
+<br>
+<br>
+Justification for alternative hypothesis: I hypothesize that the misclick rate on the webpage for version A is higher than the misclick rate  on the webpage for version B because of the low contrast issues on the button options. Since the text is very hard to distinguish and the buttons are not spaced out, I hypothesize that users might have trouble finding the correct option to select and will misclick more times on version A than on version B. 
+<br>
+<br>
+Prediction: I predict that the null hypothesis will be rejected because of the low contrast and button spacing issues on the webpage for version A. 
+<h4>Time on page</h4>
+Null hypothesis: The time spent on the webpage is the same for both designs. 
+<br>
+Alternative hypothesis: The time spent on the webpage for Version A is higher than the time spent on the webpage of Version B.
+<br> 
+<br>
+Justification for alternative hypothesis: I hypothesize that the time spent on the webpage for version A is higher than the time spent on the webpage for version B because of the low contrast issues on the button options. Since the text is very hard to distinguish and the buttons are not spaced out, I hypothesize that the time spent on version A will be longer since users might have trouble finding the correct option to select. 
+<br>
+<br>
+Prediction: I predict that the null hypothesis will be rejected because of the low contrast and button spacing issues on the webpage for version A. 
+<h4>Time to first click</h4>
+Null hypothesis: The time spent to first click is the same for both designs. 
+<br>
+Alternative hypothesis: The time spent to first click for Version A is higher than the time spent to first click for Version B. 
+<br>
+<br>
+Justification for alternative hypothesis: I hypothesize that the time to first click on the webpage for version A is higher than the time to first click on the webpage for version B. Since the text is very hard to distinguish and the buttons are not spaced out, I hypothesize that users might have trouble finding the correct option to select and will spend more time trying to figure out which button to press on version A than on version B.
+<br> 
+<br>
+Prediction: I predict that the null hypothesis will be rejected because of the low contrast and button spacing issues on the webpage for version A. 
+
                 </p>
-        </article>
-    </section>
 
-    <!-- Section 2 -->
-    <section>
-        <header>
-            <h2>Part 2: Visual Redesign</h2>
-        </header>
-        <article>
-            <!-- Subsection 2.1 -->
-            <h3>Speed Sketching</h3>
-            <section class="image-container" ></section>
-                <img
-                    src="speedsketches.png"
-                    class="menu-image2"
-                />
-                <img
-                    src="finalsketch.png"
-                    class="menu-image2"
-                />
-            </section>
-            <p>This is the content for Section 2, Subsection 2.1.</p>
 
-            <!-- Subsection 2.2 -->
-            <h3>Low-fidelity Wireframing</h3>
-            <h4>Mobile</h4>
-            <section class="image-container" ></section>
-                <img
-                    src="Low-fi mobile.png"
-                    class="menu-image2"
-                />
-            </section>
-            <h4>Tablet</h4>
-            <section class="image-container" ></section>
-                <img
-                    src="Low-fi tablet.png"
-                    class="menu-image2"
-                />
-            </section>
-            <h4>Desktop</h4>
-            <section class="image-container" ></section>
-                <img
-                    src="Low-fi Desktop.png"
-                    class="menu-image2"
-                />
-            </section>
-            <h3>Visual Design Style Guide</h3>
-            <section class="image-container" ></section>
-                <img
-                    src="Visual Design Guide.png"
-                    class="menu-image"
-                />
-            </section>
-            <h3>High-Fidelity Mockup</h3>
-            <h4>Hi-fi Mobile</h4>
-            <section class="image-container" ></section>
-                <img
-                    src="Hi-fi Mobile.png"
-                    class="menu-image2"
-                />
-            </section>
-            <h4>Hi-fi Tablet</h4>
-            <section class="image-container" ></section>
-                <img
-                    src="Hi-fi Tablet.png"
-                    class="menu-image2"
-                />
-            </section>
-            <h4>Hi-fi Desktop</h4>
-            <section class="image-container" ></section>
-                <img
-                    src="Hi-fi Desktop.png"
-                    class="menu-image2"
-                />
+
             </section>
 
-        </article>
-    </section>
 
-    <!-- Section 3 -->
-    <section>
-        <header>
-            <h2>Part Three: Responsive Redesign</h2>
-        </header>
-        <article>
-            <!-- Subsection 3.1 -->
-            <h3>Redesigned Website</h3>
-            <p><a href="https://marleniangel.github.io/ResponsiveRedesign/" target="_blank">Jala Studio Redesign</a></p>
-        </article>
-    </section>
+
+    <h2>Resulting Statistical Analysis</h2>
+<h3> Computation of each metric’s appropriate statistics </h3>
+            <section class="image-container" ></section>
+            <h4> Misclick rate metric statistics</h4>
+                <img
+                    src="misclickrate.png"
+                    class="menu-image2"
+                />
+                <p>*p-value not modified yet </p>
+                <h5> Description of test</h5>
+                <p>One-tailed t-test:The one-tailed t-test shows whether x (experimental) number is bigger/smaller than y (baseline) number. Since my alternative hypothesis states that the the misclick rate on the webpage for version A is higher than the misclick rate  on the webpage for version b, I need a test that will be able to reveal whether my x, version b, is bigger or smaller than my y, version a. 
+                </p>
+                <h5> Statistical significance</h5>
+                <p> 0.19899059153 > 0.05
+                    <br>
+                    The p-value (0.19899059153)  is not less than the significance level (0.05), therefore, the difference between versions A and B with respect to the misclick rate metric is statistically insignificant. 
+                    </p>
+                <h5> P-value</h5>
+                <p> Calculated by: p_value_{A > B} = 1 - p_value_{A < B}
+                    <br>
+                    P-value : 0.19899059153
+                    </p>
+
+                    <h5>Conclusion</h5>
+                    <p>I fail to reject the null hypothesis. </p>
+
+                <h4> Time spent on page metric statistics</h4>
+                <img
+                    src="timespentonpage.png"
+                    class="menu-image2"
+                />
+                <p>*p-value not modified yet </p>
+
+                <h5> Description of test</h5>
+                <p>One-tailed t-test:The one-tailed t-test shows whether x (experimental) number is bigger/smaller than y (baseline) number. Since my alternative hypothesis states that the time spent on the webpage for version A is higher than the time spent on the webpage for version b, I need a test that will be able to reveal whether my x, version b, is bigger or smaller than my y, version a.  
+                </p>
+                <h5> Statistical significance</h5>
+                <p> 0.00184922196 < 0.05
+                    <br>
+                    The p-value (0.00184922196)  is less than the significance level (0.05), therefore, the difference between versions A and B with respect to the time on page metric is statistically significant.
+                    </p>
+                <h5> P-value</h5>
+                <p> Calculated by: p_value_{A > B} = 1 - p_value_{A < B}
+                    <br>
+                    P-value: 0.00184922196
+                    
+                    </p>
+
+                    <h5>Conclusion</h5>
+                    <p>I reject the null hypothesis. I find statistically significant evidence that the alternative hypothesis is true. 
+                    </p>
+
+
+
+                <h4> Time to first click metric statistics</h4>
+                <img
+                    src="timetofirstclick.png"
+                    class="menu-image2"
+                />
+                <p>*p-value not modified yet </p>
+                <h5> Description of test</h5>
+                <p>One-tailed t-test:The one-tailed t-test shows whether x (experimental) number is bigger/smaller than y (baseline) number. Since my alternative hypothesis states that the time to first click on the webpage for version A is higher than the time to first click on the webpage for version B, I need a test that will be able to reveal whether my x, version b, is bigger or smaller than my y, version a. 
+                </p>
+                <h5> Statistical significance</h5>
+                <p> 0.00103670626 < 0.05
+                    <br>
+                    The p-value (0.00103670626)  is less than the significance level (0.05), therefore, the difference between versions A and B with respect to the time to first click metric is statistically significant.
+                    
+                <h5> P-value</h5>
+                <p> Calculated by: p_value_{A > B} = 1 - p_value_{A < B}
+                    <br>
+                    P-value: 0.00103670626 
+                    
+                    
+                    </p>
+
+                    <h5>Conclusion</h5>
+                    <p>I reject the null hypothesis. I find statistically significant evidence that the alternative hypothesis is true. 
+                    </p>
+
+                    <p> *P-value description relevant for all of my tests* 
+                        <br>
+                        Since the calculator (for one-tailed tests) strictly calculates the p-value relating to sample As' values being less than sample Bs' values, I had to correct the outputted p-value since all my hypotheses state that sample As' values will be greater than sample Bs' values. The p-value appropriate for this chosen hypothesis is the complement of the p-value the calculator gives. *taken from Ed Post #153 
+                        </p>
+
+                        <h3> Summary Statistics</h3>
+                        <p>Test 2:
+                            <br> 
+                            Avg(A) = 22324.78261 ≅ 22 seconds 
+                            <br>
+                            Avg(B) = 11210.6 ≅ 11 seconds 
+                            <br>
+                            
+                            Test 3: 
+                            <br>
+                            Avg(A) = 12217.42857 ≅ 12 seconds
+                            <br> 
+                            Avg(B) = 6762.210526 ≅ 6 seconds 
+                            <br>
+                            
+                            
+                            
+                            Based on tests 2 and 3, it is likely that version B is better than version A!
+                            I see that on average people spend 11 more seconds on the version A webpage, and 6 more seconds before clicking on something on it. Analysis shows that it’s likely a true difference. I think that this difference is because of version A's low contrast issues of the text on the buttons, the spacing of the buttons, and the lack of font sizing and color on appointment details. It seems that users more efficiently select what they need to on version B than on version a.
+                            </p>
+
+                
+
+            </section>
+
 
 </body>
 </html>
